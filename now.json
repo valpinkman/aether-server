@@ -1,0 +1,26 @@
+{
+  "name": "aether-server",
+  "alias": ["aether-server", "aether.valdpinkman.xyz"],
+  "github": {
+    "autoJobCancelation": false
+  },
+  "builds": [
+    {
+      "src": "api/*.ts",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "api/index.ts"
+    },
+    {
+      "src": "/(?<id>[^/]*)",
+      "dest": "api/$id.ts"
+    }
+  ],
+  "env": {
+    "COMICVINE_API": "@comicvine-api"
+  }
+}
