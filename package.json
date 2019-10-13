@@ -1,14 +1,21 @@
 {
-  "name": "manga-server",
+  "name": "aether-server",
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
+  "author": {
+    "name": "Valentin D. Pinkman",
+    "email": "valentin.d.pinkman@icloud.com"
+  },
+  "repository": {
+    "directory": "https://github.com/valpinkman/aether-server",
+    "url": "https://github.com/valpinkman/aether-server/issues"
+  },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0"
   },
   "scripts": {
-    "now-dev": "now dev --listen 5000",
-    "deploy": "now"
+    "now-dev": "now dev --listen 5000"
   },
   "devDependencies": {
     "@now/node": "^1.0.1",
