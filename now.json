@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "name": "aether-server",
   "alias": ["aether-server", "aether.valdpinkman.xyz"],
   "github": {
@@ -16,8 +17,8 @@
       "dest": "api/index.ts"
     },
     {
-      "src": "/(?<id>[^/]*)",
-      "dest": "api/$id.ts"
+      "src": "/(.*)",
+      "dest": "api/$1.ts"
     }
   ],
   "env": {
